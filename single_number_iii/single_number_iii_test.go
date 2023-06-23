@@ -28,7 +28,16 @@ func TestSingleNumberII(t *testing.T) {
 
 	for k, tt := range testCases {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
-			assert.Equal(t, tt.expected, singleNumber(tt.nums))
+			// sorting the result
+			result := singleNumber(tt.nums)
+			for i := 0; i < len(result)-1; i++ {
+				for j := 1; j < len(result); j++ {
+					if result[j] < result[i] {
+						result[i], result[j] = result[j], result[i]
+					}
+				}
+			}
+			assert.Equal(t, tt.expected, result)
 		})
 	}
 }

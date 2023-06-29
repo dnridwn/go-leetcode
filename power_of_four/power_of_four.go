@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/power-of-four
+
 package power_of_four
 
 func isPowerOfFour(n int) bool {

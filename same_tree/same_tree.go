@@ -1,4 +1,4 @@
-https://leetcode.com/problems/same-tree
+// https://leetcode.com/problems/same-tree
 
 package same_tree
 

@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/
+
 package insert_greatest_common_divisors_in_linked_list
 
 type ListNode struct {

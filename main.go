@@ -14,7 +14,7 @@ func main() {
 
 func handleGenerateLeetCodeProblemFile() {
 	// read arguments from command
-	problemName := flag.String("leetcode-problem-name", "", "Put the LeetCode problem name")
+	problemName := flag.String("name", "", "Put the LeetCode problem name")
 	flag.Parse()
 
 	// validate LeetCode problem name
